@@ -10,7 +10,6 @@
   display: flex;
   justify-content: center;
 }
-
 .letter {
   width: 70px;
   height: 70px;
@@ -56,7 +55,7 @@ html {
   font-family: "Lato", sans-serif;
 }
 
-.price h1 {
+.title h1 {
   font-weight: 300;
   color: #18C2C0;
   letter-spacing: 2px;
@@ -148,7 +147,25 @@ html {
 .button button:active {
   background-color: #139b99;
 }
-.button button i {
+
+.button a {
+  text-decoration: none;
   font-size: 1.2rem;
-  margin-right: 5px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  width: 520px;
+  background-color: #18C2C0;
+  border: none;
+  color: #fff;
+  padding: 18px;
+  border-radius: 5px;
+  outline: none;
+  -webkit-transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button a:hover {
+  background-color: #15aeac;
+}
+.button a:active {
+  background-color: #139b99;
 }
