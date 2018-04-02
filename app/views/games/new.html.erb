@@ -1,0 +1,25 @@
+<h1 class="game-title">THE LONGEST WORD GAME</h1>
+<div class="letter-container">
+  <% @letters.each do |letter| %>
+    <div class="letter"><%= letter.upcase %></div>
+  <% end %>
+</div>
+
+<div class="container">
+    <div class="price">
+        <h1>Make a word from the letters above!</h1>
+    </div>
+    <form class="card__container" action="/score" method="post">
+        <div class="card">
+            <div class="row cardholder">
+                <div class="info">
+                    <label for="cardholdername">Word:</label>
+                    <input type="text" name="word" placeholder="Make the longest word possible from the above letters" />
+                </div>
+            </div>
+        </div>
+        <div class="button">
+            <button type="submit"> Submit your word</button>
+        </div>
+    </form>
+</div>
